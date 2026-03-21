@@ -9,13 +9,13 @@ jupyter: python3
 This presentation explains what the Grammar of Graphics is, why it is important in modern data science, and how it is used in sports analytics such as baseball.
 
 
-## Introduction
+### Introduction
 
 Data visualization is a fundamental part of modern data science. Analysts must interpret large datasets and communicate insights clearly.
 
 Instead of thinking about visualization as simply choosing a chart type, the **Grammar of Graphics** provides a structured framework for building visualizations from components.
 
-## What is the Grammar of Graphics?
+### What is the Grammar of Graphics?
 
 The Grammar of Graphics was introduced by Leland Wilkinson and describes visualization as a layered system.
 
@@ -28,7 +28,7 @@ Rather than asking “what chart should I use?”, analysts ask:
 
 This approach makes visualization systematic and reproducible.
 
-# Why the Grammar of Graphics Matters in Modern Data Science
+## Why the Grammar of Graphics Matters in Modern Data Science
 
 Key benefits include:
 
@@ -57,7 +57,7 @@ data = pd.DataFrame({
 data.head()
 ```
 
-## Component 1: Data
+### Component 1: Data
 
 Every visualization begins with a dataset.
 
@@ -80,7 +80,7 @@ plt.title("Baseball Contact Profile")
 plt.show()
 ```
 
-## Component 2: Aesthetic Mappings
+### Component 2: Aesthetic Mappings
 
 Aesthetic mappings connect data variables to visual properties such as:
 
@@ -109,12 +109,11 @@ plt.colorbar(label="Hit Distance (ft)")
 plt.show()
 ```
 
-## Component 3: Scales
+### Component 3: Scales
 
 Scales determine how data values are translated into visual values.
 
 Here, hit distance is represented using a color gradient. This allows multiple variables to be displayed simultaneously, increasing information density.
-
 
 ```{python}
 plt.figure()
@@ -131,7 +130,7 @@ plt.title("Relationship Between Launch Angle and Hit Distance")
 plt.show()
 ```
 
-## Component 4: More plot objects
+### Component 4: More plot objects
 
 Geometric objects define the shapes used to represent data.
 
@@ -159,7 +158,7 @@ plt.title("Layered Visualization with Trend Line")
 plt.show()
 ```
 
-## Component 5: Layering
+### Component 5: Layering
 
 One of the most powerful ideas in the Grammar of Graphics is layering.
 
@@ -199,7 +198,7 @@ plt.axis("equal")
 plt.show()
 ```
 
-## Component 6: Coordinate Systems
+### Component 6: Coordinate Systems
 
 Coordinate systems determine how data are positioned in space.
 
@@ -220,7 +219,7 @@ plt.title("Pitch Location Heatmap")
 plt.show()
 ```
 
-## Modern Baseball Analytics Application
+### Modern Baseball Analytics Application
 
 Heatmaps like this are used to analyze:
 
@@ -230,7 +229,7 @@ Heatmaps like this are used to analyze:
 
 Grammar of Graphics principles allow teams to build consistent visual tools for decision-making.
 
-## Conclusion
+### Conclusion
 
 The Grammar of Graphics provides a structured framework for building visualizations.
 
